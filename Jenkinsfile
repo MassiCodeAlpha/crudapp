@@ -7,9 +7,9 @@ pipeline {
 
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
-        SONAR_TOKEN = credentials('sonar-token')
-        SONAR_ORGANIZATION = 'jenkins-project-123'
-        SONAR_PROJECT_KEY = 'jenkins-project-123_ci-jenkins'
+        SONAR_TOKEN = credentials('SONAR-TOKEN')
+        SONAR_ORGANIZATION = 'massicodealpha'
+        SONAR_PROJECT_KEY = 'MassiCodeAlpha_crudapp'
     }
 
     stages {
