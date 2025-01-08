@@ -33,7 +33,7 @@ pipeline {
                 script {
                     docker.withRegistry('', 'docker-cred') {
                         def buildNumber = env.BUILD_NUMBER ?: '1'
-                        def image = docker.build("pekker123/crud-123:latest")
+                        def image = docker.build("massinissa96/crudapp:latest")
                         image.push()
                     }
                 }
